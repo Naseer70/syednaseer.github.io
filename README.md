@@ -18,7 +18,7 @@ JavaScript
 Font Awesome for icons
 Installation
 
-Clone the repository using git clone https://github.com/your-username/your-repo-name.git
+Clone the repository using git clone https://snr9.github.io/syednaseer.github.io/
 Open the index.html file in a web browser to view the website
 Customization
 
