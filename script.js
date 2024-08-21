@@ -100,3 +100,8 @@ mediaQuery.addListener(function () {
     });
   }
 });
+// Add event listener to profile picture
+document.querySelector('.profile-picture').addEventListener('click', function() {
+  // Scroll to home section
+  document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+});
