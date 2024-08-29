@@ -105,3 +105,16 @@ document.querySelector('.profile-picture').addEventListener('click', function() 
   // Scroll to home section
   document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
 });
+// Add event listener to the hamburger menu button
+const hamburger = document.querySelector('.hamburger');
+const navUl = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+});
+
+navUl.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A' && e.target !== hamburger) {
+    navUl.classList.remove('show');
+  }
+});

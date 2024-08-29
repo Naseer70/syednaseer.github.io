@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'verdena', sans-serif;
     margin: 0;
@@ -21,7 +20,8 @@ a:hover {
 header {
     background-color: #202124;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
+    margin: 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -94,12 +94,18 @@ section#home {
     font-size: 1.5em;
 }
 .btn_primary {
-    background-color: #000000; /* or any other color you like */
+    background-color: #3498db; 
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow */
+    transition: background-color 0.3s ease; /* add a smooth transition effect */
+}
+
+.btn_primary:hover {
+    background-color: #2980b9; /* change the background color on hover */
 }
 
 .btn_primary:hover {
@@ -185,8 +191,9 @@ footer {
     background-color: #202124;
     color: white;
     text-align: center;
-    padding: 20px 0;
-}
+    padding: 5px 0; /* Reduced padding from 20px to 10px */
+    font-size: 0.8em; /* Reduced font size to make the text smaller */
+  }
 
 /* Animations */
 @keyframes fadeIn {
@@ -265,3 +272,44 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+/* Add styles for the hamburger menu */
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+    transition: 0.3s;
+  }
+  
+  .hamburger:hover span {
+    background-color: #555;
+  }
+  
+  /* Add media query to show the hamburger menu on smaller screens */
+  @media only screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    nav ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #26272b;
+      padding: 20px;
+      border-bottom: 1px solid #333;
+    }
+    nav ul.show {
+      display: block;
+    }
+  }
