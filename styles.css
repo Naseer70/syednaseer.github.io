@@ -313,3 +313,21 @@ footer {
       display: block;
     }
   }
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 600px;
+    }
+    
+    .gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    width: 100%;
+    height: 600px;
+    }
+    
+    .gmap_iframe {
+    height: 600px!important;
+    }
+
