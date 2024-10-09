@@ -30,9 +30,7 @@ header {
     transition: background-color 0.3s ease-in-out;
 }
 
-header.scrolled {
-    background-color: #1a1b1c;
-}
+
 
 nav {
     display: flex;
@@ -289,7 +287,7 @@ footer {
     height: 3px;
     margin: 5px;
     background-color: #ffffff;
-    transition: 0.3s;
+    
   }
   
   .hamburger:hover span {
